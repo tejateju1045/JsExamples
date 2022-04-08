@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange</title>
+</head>
+<body>
+    <h1>Select Party you want to Vote</h1>
+    <select id = "vote" onchange = "onchangefunction()">
+        <option value="Congress"> Congress</option>
+        <option value="BJP">BJP</option>
+        <option value="TRS">TRS</option>
+        <option value="TDP">TDP</option>
+    </select> 
+    
+    <h4 id="selectedParty"></h4>
+    
+    <script>
+        function onchangefunction(){
+            let votedParty = document.getElementById("vote").value;
+            document.getElementById("selectedParty").innerHTML ="Voted party is " +votedParty;
+        }
+
+    </script>
+</body>
+</html>

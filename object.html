@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="person"></p>
+    <script>
+        const person={
+            firstName : "Tejashwini", 
+            lastName : "Nunemunthala",
+            age : 21,
+            city : "Hyderabad",
+            height : 159,
+            weight :43,
+            fullname: function(){
+                return this.firstName+ " " + this.lastName;
+            },
+            BMIindex : function(){
+                return this.height/this.weight;
+            }
+        }
+        
+        //document.getElementById("person").innerHTML = person.firstName + " "+person.lastName
+        //document.getElementById("person").innerHTML = person["firstName"] + " "+person["lastName"]
+        document.getElementById("person").innerHTML = person.fullname();
+        document.getElementById("person").innerHTML = person.BMIindex();
+
+    </script>
+</body>
+</html>

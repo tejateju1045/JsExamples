@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo1"></p>
+    <script>
+        const trainee = {week1:24 , week2:45 ,week3:57, week4:47};
+        var average ;
+        var agreegate = 0;
+        var len = Object.keys(trainee).length
+
+        for (let i in trainee){
+            agreegate +=trainee[i];
+            
+        }
+        average = agreegate/len;
+
+        document.getElementById('demo1').innerHTML =average;
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <h3 style="text-align:center">Arthematic Operations</h3>
+    <table class="table table-bordered">
+        <tr>
+            <th>Arthematic</th>
+            <th>subtraction</th>
+            <th>Multiplication</th>
+            <th>Divission</th>
+            <th>Modulus</th>
+            
+        </tr>
+        <tr>
+            <td id ="td1"></td>
+            <td id="td2"></td>
+            <td id ="td3"></td>
+            <td id ="td4"></td>
+            <td id ="td5"></td>
+        </tr>
+    </table>
+
+
+    <script>
+
+        let number1 = 20;
+        let number2 = 4;
+
+        //addition operation
+        let addition = number1+number2
+        //document.writeln("addition of two numbers ="+ addition+" ")
+        document.getElementById("td1").innerHTML =  addition;
+        
+        //subtrction
+        let subtrction = number1-number2+5
+        //document.writeln("subtraction of two numbers ="+ subtrction+" ")
+        document.getElementById("td2").innerHTML =subtrction;
+
+        //multiplication
+        let multiplication = (number1*number2)*2
+        //document.writeln("multipliction of two numbers ="+ multiplication+ " ")
+        document.getElementById("td3").innerHTML = multiplication;
+
+        //divission 
+        let divission = number1/number2
+        //document.writeln("divission of two numbers ="+ divission+ " ")
+        document.getElementById("td4").innerHTML = divission;
+        
+        //modulus operator 
+        let modulus = number1 % number2
+        //document.writeln("modulus of two numbers ="+modulus+ " ")
+        document.getElementById("td5").innerHTML = modulus;
+
+        /*assignment operator
+        number1 += number2;
+         document.write("assignment operator result = "+number1 + " ")
+
+        //Increment
+        let number3 = ++number1
+        document.write("Increment of number1 ="+ number3 + " ")
+
+        let number4 = number1++ + ++number2
+        document.write("Sum of number1 postIncrement and number2 preIncrement ="+ number4 + " ")
+
+        //decrement 
+        let number5 = number3-- + 10
+        document.write("decrement operator result = " + number5)*/
+
+    
+        
+    </script>
+</body>
+</html>

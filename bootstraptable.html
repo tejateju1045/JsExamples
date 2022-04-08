@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Salary Table</h2>
+  <p>click on bellow button and display the Employee salary table</p>    
+  <button class="btn btn-warning" type="button" onclick="clickOnRupee()">Rupee</button>
+  <button class="btn btn-primary" type="button" onclick="clickOnDollar()">Dollar</button>
+  <button class="btn btn-warning" type="button" onclick="clickOnEuro()">Euro</button>        
+  <table class="table" style="display:none;" id="table1">
+    <thead>
+      <tr>
+        <th>sl no</th>
+        <th>Emp Name</th>
+        <th>Salary</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Siri</td>
+            <td>&#8377 25000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Preethi</td>
+            <td>&#8377 24000</td>
+        </tr>
+    
+        <tr>
+            <td>3</td>
+            <td>Riya</td>
+            <td>&#8377 25000</td>
+        </tr>
+            
+        </table>
+    
+    
+    </tbody>
+  </table>
+
+
+  <table class="table" style="display: none;" id="table2">
+    <thead>
+      <tr>
+        <th>sl no</th>
+        <th>Emp Name</th>
+        <th>Salary</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Ava</td>
+            <td>&#36 25000</td>
+        </tr>
+            <tr>
+                <td>2</td>
+                <td>Amelia</td>
+                <td>&#36 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Emma</td>
+                <td>&#36 25000</td>
+            </tr>
+            
+        </table>
+    
+    
+    </tbody>
+  </table>
+  <table class="table" style="display: none;" id="table3">
+    <thead>
+      <tr>
+        <th>sl no</th>
+        <th>Emp Name</th>
+        <th>Salary</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td>&#8364 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Isla</td>
+                <td>&#8364 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Sophia</td>
+                <td>&#8364 25000</td>
+            </tr>
+    </tbody>
+  </table>
+</div>
+        <script>
+             function clickOnRupee(){
+                document.getElementById("table1").style.display="block"
+                document.getElementById("table2").style.display="none";
+                document.getElementById("table3").style.display="none";
+
+                 }
+
+            function clickOnDollar(){
+                document.getElementById("table2").style.display="block";
+                document.getElementById("table1").style.display="none";
+                document.getElementById("table3").style.display="none"
+            }
+
+            function clickOnEuro(){
+                document.getElementById("table3").style.display="block";
+                document.getElementById("table2").style.display="none";
+                document.getElementById("table1").style.display="none";
+            }
+        </script>
+    </body>
+</html>

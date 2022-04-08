@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo1"></p>
+    <script>
+        let greetinng ;
+        let time =new Date().getHours();
+        switch(time){
+            case (time<12):
+                greetinng = "Good Morning";
+                break;
+            case 12:
+                greetinng = "good noon";
+                break;
+            case 13:
+            case 14:
+            case 15:
+                greetinng = "good Afternoon";
+                break;
+            case 16: 
+            case 17:
+            case 18: 
+                greetinng = "Good Evening";
+                break;
+            default :
+                greetinng = "good Night";
+                break;
+                
+        }
+
+        document.getElementById('demo1').innerHTML = greetinng;
+    </script>
+</body>
+</html>

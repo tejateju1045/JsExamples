@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        let number1=10.909999;
+        document.getElementById("demo0").innerHTML= number1.toString()+'<br>'+(190).toString();
+
+        document.getElementById("demo1").innerHTML= number1.toExponential(2);
+
+        document.getElementById("demo2").innerHTML= number1.toFixed(5);
+
+        document.getElementById("demo3").innerHTML= number1.toPrecision(3)
+
+        document.getElementById("demo4").innerHTML= number1.valueOf();
+
+    </script>
+</body>
+</html>

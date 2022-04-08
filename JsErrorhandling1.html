@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        let inputnumber = 2.6745387849;
+
+
+
+        try{
+            //addalert("Tejashwini");   //ReferenceError
+            //document.getElementById("demo3").innerHTML = inputnumber.toPrecision(200); //RangeError
+            //document.getElementById("demo4").innerHTML = eval("'djbfjdfhiur"); //syntaxError
+            
+            //inputnumber.toLowerCase(); //typeError
+            
+            decodeURI("%%%"); //Uri Error
+
+
+
+
+        }
+        catch(err){
+            document.getElementById("demo1").innerHTML = err.name;
+            document.getElementById("demo2").innerHTML = err.message;
+        }
+    </script>
+</body>
+</html>

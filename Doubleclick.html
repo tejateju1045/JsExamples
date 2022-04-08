@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>double click</title>
+</head>
+<body>
+    <h1>Name</h1>
+    <p id="name">Siri</p>
+    <h1>Course</h1>
+    <p id="course">Electronics and Communication Engineering</p>
+    <h1>Section</h1>
+    <p id="sec">Section A</p>
+    <h1>Year</h1>
+    <p id="year">3rd Year</p>
+    <h1>CGPA</h1>
+    <p id ="grade">8.5</p>
+    <p>Click below Button to change the Student details</p>
+    <button type="button" ondblclick="doubleClickFunction()">Click here</button>
+
+    <script>
+        function doubleClickFunction(){
+            document.getElementById("name").textContent="Riya";
+            document.getElementById("course").textContent="Computer Science Engineering"
+            document.getElementById("sec").textContent="Section B";
+            document.getElementById("year").textContent="4th";
+            document.getElementById("grade").textContent="8.0";
+
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    <script>
+        let searchString = "This is Zensar zensar Training"
+        let firstName = "Nunemunthala";
+        let lastName = "Tejashwini"
+
+        let stringFormating = `Welcome ${firstName} ${lastName}`
+
+        document.getElementById('demo1').innerHTML = searchString.indexOf("Training");
+        document.getElementById('demo2').innerHTML = searchString.lastIndexOf("zensar");
+        document.getElementById('demo3').innerHTML = searchString.search(/zensar/i);
+        document.getElementById('demo4').innerHTML = searchString.match(/zensar/ig);
+
+        document.getElementById('demo5').innerHTML = searchString.includes('Zensar');
+
+        document.getElementById('demo6').innerHTML = searchString.startsWith('This');
+
+        document.getElementById('demo7').innerHTML = searchString.endsWith('Training');
+
+        document.getElementById('demo8').innerHTML = stringFormating;
+
+
+    </script>
+</body>
+</html>

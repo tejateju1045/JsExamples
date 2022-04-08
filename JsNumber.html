@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+
+        let number0 = 4.8900;
+        let number1 =4;
+        let number2 =900e10;
+        let number3 = 800e-5;
+        
+        let number4 = 999999999999999;
+        let number5 = 9999999999999999;
+        let number31 = (0.1*10+0.2*10)/10;
+        
+
+        let number6 = "100"
+        let number7 = "30"
+        let number8 = number6 - number7 ;
+        let number9 = number6 + number7 ;
+        document.getElementById("demo3").innerHTML = number8;
+        document.getElementById("demo4").innerHTML = number9;
+
+        let number10 = 100;
+        let str1 = "Teja";
+        let number11 = number10/str1;
+        document.getElementById("demo5").innerHTML = number11+ '<br>'+isNaN(number11);
+
+        let nan1= NaN;
+        let number12= 100;
+        let number13= "100";
+        let number14 = nan1+number12;
+        let number15 = nan1+number13;
+        document.getElementById("demo6").innerHTML = number14 + '<br>' + number15;
+       
+        let number16 = 2/0 ;
+        let number17 = -2/0;
+        document.getElementById("demo7").innerHTML = number16 + '<br>' + number17;
+
+
+        let number18 = new Number(125);
+        document.getElementById("demo8").innerHTML = number18+ '<br>' + typeof(number18);
+        
+        
+        document.getElementById("demo0").innerHTML = number2;
+
+        document.getElementById("demo1").innerHTML = number3;
+
+    
+        document.getElementById("demo2").innerHTML = number11+ '<br>'+isNaN(number11);
+        document.getElementById("demo1").innerHTML = number3;
+
+
+        document.getElementById("demo2").innerHTML = number4 +'<br>' +number5;
+        document.getElementById("demo3").innerHTML = number8;
+        document.getElementById("demo4").innerHTML = number9;
+
+    </script>
+</body>
+</html>

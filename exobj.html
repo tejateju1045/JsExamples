@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="student1"></p>
+    <p name ="percentage1"></p>
+    <p id="student2"></p>
+    <p name ="percentage2"></p>
+
+    
+
+    <script>
+        const student1 = {
+            name : "Riya",
+            fatherName: "Sudeep",
+            age : 15,          
+            marks : {English:33 , Maths:30, Physics :30,Chemistry:20,
+            totalMarks:function(){
+               return this.English+this.Maths+this.Physics+this.Chemistry
+            }
+            
+            }
+               
+        }
+        const student2 = {
+            name : "Srija",
+            fatherName: "Srinivas",
+            age : 15,          
+            marks : {English:88 , Maths:95, Physics :90,Chemistry:90,
+                totalMarks:function(){
+               return this.English+this.Maths+this.Physics+this.Chemistry
+            }}         
+        }
+
+
+        function resultOfTheStudents(marks){
+            if(marks>200){
+                return "Pass";
+            }
+            else{
+                return "Failed";
+            }
+        }
+
+
+        document.getElementById("student1").innerHTML=student1.marks.totalMarks();
+        document.getElementById("student2").innerHTML=student2.marks.totalMarks();
+
+        document.getElementsByName("percentage1")[0].innerHTML=student1.name+" "+resultOfTheStudents(student1.marks.totalMarks())+" in Exam";
+        
+        document.getElementsByName("percentage2")[0].innerHTML=student2.name+" "+resultOfTheStudents(student2.marks.totalMarks())+" in Exam";
+
+       
+    </script>
+
+
+</body>
+</html>

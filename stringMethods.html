@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id ="demo4"></p>
+    <p id = "demo5"></p>
+    <p id ="demo6"></p>
+    <p id = "demo7"></p>
+    <p id ="demo8"></p>
+    <p id ="demo9"></p>
+    <p id ="demo10"></p>
+    <p id ="demo11"></p>
+    <p id ="demo12"></p>
+    
+    <script>
+        //string Methods
+        
+        let str = "Good Morning. Have a nice day."
+        
+        //string slice
+        document.getElementById("demo1").innerHTML = str.slice(-5,-1);
+
+        //string substr
+        document.getElementById("demo2").innerHTML = str.substr(1,5);
+
+        //string substring
+
+    document.getElementById('demo3').innerHTML = str.substring(1,5);
+
+    // string replace 
+
+    document.getElementById('demo4').innerHTML = str.replace('Morning','Afternoon');
+
+    //string uppercase
+    document.getElementById('demo5').innerHTML = str.toLocaleLowerCase();
+
+    //string trim
+    document.getElementById('demo6').innerHTML = str.trim();
+
+    //string concat
+    document.getElementById('demo7').innerHTML = str.concat(" Im Tejashwini.");
+
+    //string padding 
+
+    document.getElementById('demo8').innerHTML = str.padStart(33,"hi ") +"<br>" + str.padEnd(33,'Hi ');
+
+
+    document.getElementById('demo9').innerHTML =str.charAt(1);
+
+    document.getElementById('demo10').innerHTML =str.charCodeAt(6);
+
+    const stingArray = str.split(' ')
+
+    document.getElementById('demo11').innerHTML =stingArray[4];
+
+    document.getElementById('demo12').innerHTML =stingArray.length;
+
+   
+
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        const trainee = new Map([
+            ["name","TejaShwini"],
+            ["Branch","ECE"],
+            ["CGPA",7.25],
+            ["RollNumber","16UP1A0479"]
+        ])
+
+        document.getElementById('demo1').innerHTML = trainee.get("name")+'<hr>'+trainee.has("RollNumber")
+        +'<hr>'+trainee.size+'<hr>'+trainee.delete("Branch")+"<hr>"+trainee.size;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <p id="dispDate"></p>
+    <p id="dispDate1"></p>
+    <p id="dispDate2"></p>
+    <p id="dispDate3"></p>
+    <p id="dispDate4"></p>
+    <p id="dispDate5"></p>
+    <p id="dispDate6"></p>
+    <p id="dispDate7"></p>
+    <p id="dispDate8"></p>
+    <p id="dispDate9"></p>
+    <p id="dispDate10"></p>
+    <p id="dispDate11"></p>
+    <p id="dispDate12"></p>
+    <p id="dispDate13"></p>
+
+
+    
+    <script>
+        let date = new Date();
+        let date2 = new Date(2022,02,28,14,28,34,105);
+
+        let date3 = new Date(2022,03,2)
+
+        let date4 = new Date(1648490000000);
+
+        date.setFullYear(2030,3,22,8,15,50);
+
+        
+       //date methods 
+        
+        document.getElementById("dispDate").innerHTML = date;
+        document.getElementById("dispDate1").innerHTML = date2.getFullYear();
+
+        document.getElementById("dispDate2").innerHTML = date2.toJSON();
+        document.getElementById("dispDate3").innerHTML = date2.getTime();
+        document.getElementById("dispDate4").innerHTML = date2.toUTCString();
+        document.getElementById("dispDate5").innerHTML = date2.getTimezoneOffset();
+
+        document.getElementById("dispDate6").innerHTML = date.getUTCDate();
+        document.getElementById("dispDate7").innerHTML = date.toTimeString();
+
+        document.getElementById("dispDate8").innerHTML = date.toUTCString();
+
+        
+        document.getElementById("dispDate9").innerHTML = date.getHours();
+        document.getElementById("dispDate10").innerHTML = date.getUTCDate();
+
+        document.getElementById('dispDate11').innerHTML = date3.setHours(5)+ '<br>'+date3;
+        
+        document.getElementById('dispDate12').innerHTML = date3.setDate(20)+ '<br>'+date3;
+
+        document.getElementById('dispDate13').innerHTML = date3.setMinutes(20)+ '<br>'+date3;
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

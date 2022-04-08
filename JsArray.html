@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <p id = "arrDisplay"></p>
+    <p id = "arrDisplay1"></p>
+    <p id = "arrDisplay2"></p>
+    <p id = "arrDisplay3"></p>
+    <p id = "arrDisplay4"></p>
+    <p id = "arrDisplay5"></p>
+    <p id = "arrDisplay6"></p>
+    <p id = "arrDisplay7"></p>
+    <p id = "arrDisplay8"></p>
+    <p id = "arrDisplay9"></p>
+    <p id = "arrDisplay10"></p>
+    <p id = "arrDisplay11"></p>
+    <p id = "arrDisplay12"></p>
+    <p id = "arrDisplay13"></p>
+    <p id = "arrDisplay14"></p>
+
+    <p id = "arrDisplay15"></p>
+    <p id = "arrDisplay16"></p>
+
+    
+    <script>
+        const students = ["Teja","Struthi","Srija","Ayesha"];
+        const TenthStudents = [];
+        TenthStudents[0] ="Siri";
+        TenthStudents[1] = "Mounika";
+        TenthStudents[2] = "Suchitra"
+
+        //array is a numbered Index 
+
+        const arrObj = new Array("Tejashwini" , "Nunemunthala","hyderabad",502103);
+
+        //object is a named Index
+
+        const marks = {name:"Tejashwini" , week1 : 25 , week2:30 , week3: 20}
+
+        const number = [4,9,16,25,36]
+
+        document.getElementById("arrDisplay").innerHTML = students[0];
+        document.getElementById("arrDisplay1").innerHTML = TenthStudents;
+        document.getElementById("arrDisplay2").innerHTML = arrObj + '<br>'+ "length Of Array =" + arrObj.length;
+        document.getElementById("arrDisplay3").innerHTML = marks.name+ '<br>' + marks.week2;
+
+        //array Methos
+        document.getElementById("arrDisplay4").innerHTML = arrObj.toString();
+
+
+        document.getElementById("arrDisplay5").innerHTML = arrObj.join('/');
+
+        document.getElementById("arrDisplay6").innerHTML =students.indexOf("Ayesha");
+
+        document.getElementById("arrDisplay7").innerHTML = students.shift();
+
+        document.getElementById("arrDisplay8").innerHTML = arrObj.unshift("Siddipet") + '<br>' + arrObj;
+
+        document.getElementById("arrDisplay9").innerHTML = students.push("Riya") + '<br>' + students;
+
+        document.getElementById("arrDisplay10").innerHTML = students.pop() + '<br>' + students;
+
+        document.getElementById("arrDisplay11").innerHTML = students.concat(TenthStudents);
+
+        document.getElementById("arrDisplay12").innerHTML = number.map(Math.sqrt);
+
+        document.getElementById("arrDisplay13").innerHTML = arrObj.unshift("Siddipet") + '<br>' + arrObj;
+
+        document.getElementById("arrDisplay14").innerHTML = arrObj.sort();
+        
+        
+        
+
+
+    </script>
+</body>
+</html>

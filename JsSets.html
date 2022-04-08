@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        const students = new Set(["Siri","Abhi","Srija","Sneha","Vindya"]);
+        students.add("Milky");
+        students.add("Vaishu");
+        students.delete("Srija");
+        let str = [];
+        let str2 ="";
+        students.forEach(function(value){
+            str += value+" <br>";
+        })
+
+        for (const i of students.values()){
+            str2 += i +"<br>"
+        }
+        
+
+        document.getElementById("demo1").innerHTML = students.size;
+
+        document.getElementById("demo2").innerHTML = students.has("Srija");
+        
+        document.getElementById("demo3").innerHTML = students.has("Abhi");
+        
+        document.getElementById("demo4").innerHTML = str;
+        document.getElementById("demo6").innerHTML = str2;
+        
+    </script>
+</body>
+</html>

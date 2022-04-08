@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text"></p>
+    <p id="length"></p>
+    <p id="escape"></p>
+    <p id ="escape1"></p>
+    <p id="address"></p>
+
+    <script>
+        let text1 = "Nunemunthala Tejashwini";
+        let text2 = "Hyderabad";
+        let text3=  "I'm \"Tejashwini\"";
+        let text4 = "C:\\HTML\\Js" ;
+
+        //breaking lines
+         let add = "fuh7rhyfrfhbsdfusdfyjhfriuhrukr \
+         fhuryfurhfufhjehuhyiudiy"
+        
+
+        document.getElementById("text").innerHTML = text1 + "<br>" +text2
+        document.getElementById("text").style.color ="Red";
+        document.getElementById("text").style.fontSize ="25px";
+
+        document.getElementById("length").innerHTML=text2.length;
+        document.getElementById("length").style.fontSize ="25px";
+        document.getElementById("escape").innerHTML=text3;
+        document.getElementById("escape1").innerHTML=text4;
+        document.getElementById("adress").innerHTML=add;
+    </script>
+</body>
+</html>
